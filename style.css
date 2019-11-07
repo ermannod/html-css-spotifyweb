@@ -80,8 +80,53 @@ a:hover{
   top:0;
 }
 
+.side-menu{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.logo{
+  padding: 24px;
+}
+
 .logo img{
   width: 100%;
+}
+
+.side-menu i{
+  font-size: 24px;
+}
+
+.side-menu ul li,.side-menu p, .side-menu .playlist{
+  padding: 12px 24px;
+}
+
+.side-menu, .side-menu ul li a, .side-menu p{
+  font-size: 14px;
+}
+
+.side-menu ul li:first-child{
+  border-left: 2px solid green;;
+}
+
+
+.download{
+  padding: 8px 24px;
+}
+
+.download hr{
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 8px 0;
+}
+
+.download img {
+  border-radius: 50%;
+}
+
+.download a span{
+  vertical-align: super;
 }
 
 /*** END Fixed bars ***/
@@ -139,11 +184,30 @@ main {
 }
 
 .musicbox p a{
-  margin: 0 auto;
+  margin: 6px auto;
   display: block;
 }
+@media screen and (max-width: 768px) {
+  .scrollmenu{
+    display: none;
+  }
 
-@media screen and (max-width: 767px) {
+  .hambmenu {
+    display: block;
+    font-size: 40px;
+  }
+
+  .musicbox {
+    margin-bottom: 30px;
+    max-width: 130px;
+  }
+
+}
+
+@media screen and (max-width: 425px) {
+  body{
+    font-size: 12px;
+  }
   .navmain {
     width: 100px;
   }
@@ -152,13 +216,34 @@ main {
     width: calc(100% - 100px);
   }
 
-  .scrollmenu{
+  span{
     display: none;
   }
 
-  .hambmenu {
-    display: block;
-    font-size: 40px;
+  .side-menu{
+  text-align: center;
+  }
+
+  .side-menu ul li, .side-menu p, .side-menu .playlist {
+    padding: 12px;
+  }
+
+  .side-menu i{
+    font-size: 30px;
+  }
+
+  .profilepic{
+    width: 30px;
+  }
+
+  .musicbox {
+    max-width: 109px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .musicbox {
+    max-width: 100%;
   }
 
 }
