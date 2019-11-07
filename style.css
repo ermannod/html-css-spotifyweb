@@ -129,6 +129,61 @@ a:hover{
   vertical-align: super;
 }
 
+.bottombar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 18px;
+}
+
+.musicbarleft img{
+  width: 68px;
+}
+
+.artist{
+  display: inline-block;
+  position: relative;
+  height: 72px;
+  width: 200px;
+  padding-left: 10px;
+}
+
+.song{
+  position: absolute;
+  top:18px;
+}
+
+.name{
+  position: absolute;
+  bottom:12px;
+}
+
+.artist a{
+  font-size: 12px;
+}
+
+.heart{
+  position: absolute;
+  right: 0;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.expand{
+  position: absolute;
+  right: -30px;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+.mainplayer{
+  align-self: center;
+  border-color: green;
+  width: 200px;
+  height: 100px,
+}
+
+
 /*** END Fixed bars ***/
 
 /*** Scroll through ***/
@@ -187,6 +242,9 @@ main {
   margin: 6px auto;
   display: block;
 }
+
+/*** end scroll through ***/
+
 @media screen and (max-width: 768px) {
   .scrollmenu{
     display: none;
